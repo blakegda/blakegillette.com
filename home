@@ -5,41 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blake Gillette</title>
+    <!-- Include FontAwesome stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #000;
+            color: #fff;
             display: flex;
             align-items: center;
             justify-content: center;
             height: 100vh;
             flex-direction: column;
+            margin: 0;
         }
 
         h1 {
-            font-size: 4em;
-            margin-bottom: 20px;
+            font-size: calc(20vh + 3vw);
+            margin: 0;
+            line-height: 0.8;
+        }
+
+        div {
+            margin-top: 2%;
         }
 
         a {
             margin: 10px;
             text-decoration: none;
-            color: #333;
+            color: #fff;
+            font-size: 2em; /* Adjusted size for icons */
         }
 
         a:hover {
-            text-decoration: underline;
+            text-decoration: none; /* Removed underline for icons */
+            opacity: 0.8; /* Added a fade effect on hover */
         }
     </style>
 </head>
 
 <body>
 
-    <h1>Blake Gillette</h1>
+    <h1>Blake<br>Gillette</h1>
     <div>
-        <a href="mailto:your-email@example.com">Email</a>
-        <a href="https://www.linkedin.com/in/your-linkedin-handle/" target="_blank">LinkedIn</a>
-        <a href="https://twitter.com/your-twitter-handle" target="_blank">Twitter</a>
+        <!-- Email icon -->
+        <a href="mailto:blake@blakegillette.com" title="Email"><i class="fas fa-envelope"></i></a>
+        <!-- LinkedIn icon -->
+        <a href="https://www.linkedin.com/in/blake-gillette-almqvist/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <!-- Twitter icon -->
+        <a href="https://twitter.com/blakealmqvist/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
     </div>
 
 </body>
