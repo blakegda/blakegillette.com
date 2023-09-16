@@ -5,57 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blake Gillette</title>
-    <!-- Include FontAwesome stylesheet -->
+    <!-- FontAwesome stylesheet for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #000;
             color: #fff;
+            margin: 0;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             height: 100vh;
-            flex-direction: column;
-            margin: 0;
         }
 
         h1 {
-            font-size: calc(20vh + 3vw);
+            font-size: calc(75vh - 10%); /* This makes sure the text is 75% of the viewport height minus a small portion for the icons */
             margin: 0;
-            line-height: 0.8;
+            line-height: 1;
         }
 
-        div {
+        .icons {
             margin-top: 2%;
+            font-size: 2rem;
         }
 
-        a {
-            margin: 10px;
+        .icons a {
+            margin: 0 10px;
+            color: white;
             text-decoration: none;
-            color: #fff;
-            font-size: 2em; /* Adjusted size for icons */
-        }
-
-        a:hover {
-            text-decoration: none; /* Removed underline for icons */
-            opacity: 0.8; /* Added a fade effect on hover */
         }
     </style>
 </head>
 
 <body>
-
     <h1>Blake<br>Gillette</h1>
-    <div>
-        <!-- Email icon -->
-        <a href="mailto:blake@blakegillette.com" title="Email"><i class="fas fa-envelope"></i></a>
-        <!-- LinkedIn icon -->
-        <a href="https://www.linkedin.com/in/blake-gillette-almqvist/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <!-- Twitter icon -->
-        <a href="https://twitter.com/blakealmqvist/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+    <div class="icons">
+        <a href="mailto:blake@blakegillette.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/blake-gillette-almqvist/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com/BlakeAlmqvist" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
     </div>
-
 </body>
 
 </html>
