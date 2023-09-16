@@ -15,15 +15,17 @@
             margin: 0;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start; /* Align to the left */
             justify-content: center;
             height: 100vh;
+            padding-left: 10%; /* Left padding to not stick content to the edge */
         }
 
         h1 {
-            font-size: calc(75vh - 10%); /* This makes sure the text is 75% of the viewport height minus a small portion for the icons */
+            font-size: calc(45vh - 10%); /* This makes sure the text is 45% of the viewport height minus a small portion for the icons */
             margin: 0;
             line-height: 1;
+            text-align: left; /* Align the text to the left */
         }
 
         .icons {
