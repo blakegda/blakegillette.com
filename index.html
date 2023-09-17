@@ -23,13 +23,14 @@
             justify-content: center;
             height: 100vh;
             padding-left: 10%; /* Left padding to not stick content to the edge */
+            position: relative; /* Added to position the cartoon image */
         }
 
         h1 {
-            font-size: calc(25vh - 10%); /* Adjusted size */
-            margin: 0 0 20px 0;
+            font-size: calc(25vh - 10%); 
+            margin: 0 0 20px 0; /* This will add a 20px gap after the h1 */
             line-height: 1;
-            text-align: left; /* Align the text to the left */
+            text-align: left;
         }
 
         .icons {
@@ -41,6 +42,14 @@
             color: white;
             text-decoration: none;
         }
+
+        #cartoon-image {
+            position: absolute;
+            bottom: 10px; 
+            right: 10px;
+            width: 100px; 
+            height: auto;
+        }
     </style>
 </head>
 
@@ -51,6 +60,7 @@
         <a href="https://www.linkedin.com/in/blake-gillette-almqvist/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
         <a href="https://twitter.com/BlakeAlmqvist" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter-square"></i></a>
     </div>
+    <img id="cartoon-image" src="./Blake%20Website%20outline%20photo.png" alt="Cartoon version of Blake Gillette">
 </body>
 
 </html>
