@@ -14,50 +14,45 @@
     <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap" rel="stylesheet">
     <!-- FontAwesome stylesheet for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <style>
         body {
-            font-family: 'Londrina Solid', sans-serif; 
-            background-color: #000;
-            color: #fff;
-            margin: 0;
+            font-family: 'Londrina Solid', cursive;
+            background-color: black;
+            color: white;
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
+            align-items: start; /* Aligning content to start (left) */
             justify-content: center;
             height: 100vh;
-            padding-left: 10%; 
-            position: relative;
+            padding: 0 5%; /* Horizontal padding */
         }
 
         h1 {
-            font-size: calc(25vh - 10%); 
-            margin: 0 0 20px 0;
-            line-height: 1;
-            text-align: left;
+            font-size: 25%;
+            margin-bottom: 1.5rem;
         }
 
         .icons {
             font-size: 2rem;
+            gap: 1.5rem;
             display: flex;
-            align-items: center; /* Centers the icons with the image */
+            color: white; /* Making icons white */
         }
 
         .icons a {
-            margin: 0 10px;
-            color: white;
+            color: white; /* Ensuring links are white and not underlined */
             text-decoration: none;
         }
 
-        #cartoon-image {
+        .cartoon-image {
             position: absolute;
             bottom: calc(2rem + 10px);
-            right: 10px;
-            width: 300px;
-            height: auto;
+            right: 2rem;
+            width: 150px;
         }
-    <style>
+    </style>
 </head>
-
 <body>
     <h1>BLAKE<br>GILLETTE</h1>
     <div class="icons">
@@ -67,4 +62,6 @@
     </div>
     <img src="Blake Website outline photo.png" alt="Cartoonized Blake" class="cartoon-image">
 </body>
+</html>
+
 </html>
