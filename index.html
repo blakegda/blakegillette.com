@@ -23,7 +23,7 @@
             justify-content: center;
             height: 100vh;
             padding-left: 10%; 
-            position: relative; 
+            position: relative;
         }
 
         h1 {
@@ -35,7 +35,8 @@
 
         .icons {
             font-size: 2rem;
-            position: relative; /* to align with the image bottom */
+            display: flex;
+            align-items: center; /* Centers the icons with the image */
         }
 
         .icons a {
@@ -46,11 +47,10 @@
 
         #cartoon-image {
             position: absolute;
-            bottom: 10px;
+            bottom: calc(2rem + 10px);
             right: 10px;
-            width: 300px; 
+            width: 300px;
             height: auto;
-            bottom: calc(10px + 2rem - 100%); /* to align with the bottom of the icons */
         }
     </style>
 </head>
@@ -66,4 +66,3 @@
 </body>
 
 </html>
-
