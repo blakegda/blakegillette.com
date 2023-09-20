@@ -53,6 +53,7 @@
             right: 2rem;
             width: 300px;
             height: auto;
+            cursor: pointer; /* Indicates it's clickable */
         }
     </style>
 </head>
@@ -63,8 +64,17 @@
         <a href="mailto:me@blakegillette.com" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-square-envelope"></i></a>
         <a href="https://twitter.com/BlakeAlmqvist" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter-square"></i></a>
     </div>
-    <img src="Blake Website outline photo.png" alt="Cartoonized Blake" class="cartoon-image">
-</body>
-</html>
+    <img src="Blake Main Image.png" alt="Cartoonized Blake" class="cartoon-image" id="toggleImage">
 
+    <script>
+        document.getElementById("toggleImage").addEventListener("click", function() {
+            var image = document.getElementById("toggleImage");
+            if (image.src.match("Blake Main Image.png")) {
+                image.src = "Blake Website Speech Bubble.png";
+            } else {
+                image.src = "Blake Main Image.png";
+            }
+        });
+    </script>
+</body>
 </html>
