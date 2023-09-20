@@ -64,16 +64,16 @@
         <a href="mailto:me@blakegillette.com" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-square-envelope"></i></a>
         <a href="https://twitter.com/BlakeAlmqvist" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter-square"></i></a>
     </div>
-    <img src="Blake Main Image.png" alt="Cartoonized Blake" class="cartoon-image" id="toggleImage">
+    <img src="Blake Main Image.png" data-alt-src="Blake Website Speech Bubble.png" alt="Cartoonized Blake" class="cartoon-image" id="toggleImage">
 
     <script>
         document.getElementById("toggleImage").addEventListener("click", function() {
             var image = document.getElementById("toggleImage");
-            if (image.src.match("Blake Main Image.png")) {
-                image.src = "Blake Website Speech Bubble.png";
-            } else {
-                image.src = "Blake Main Image.png";
-            }
+            var currentSrc = image.src;
+            var altSrc = image.getAttribute('data-alt-src');
+            
+            image.src = altSrc;
+            image.setAttribute('data-alt-src', currentSrc);
         });
     </script>
 </body>
